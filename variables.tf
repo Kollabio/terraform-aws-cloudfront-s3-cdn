@@ -34,6 +34,12 @@ variable "use_regional_s3_endpoint" {
   default     = false
 }
 
+variable "use_existing_origin" {
+  type        = bool
+  description = "When set to 'true' origin bucket is provided and used"
+  default     = false
+}
+
 variable "additional_bucket_policy" {
   type        = string
   default     = "{}"
